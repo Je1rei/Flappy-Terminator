@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour, IInteractable
 {
     private EnemyCollisionHandler _handler;
 
-    public event Action EnemyDead;
+    public event Action Dead;
 
     private void OnEnable()
     {
@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour, IInteractable
 
     private void Die()
     {
-        EnemyDead?.Invoke();
-        Destroy(gameObject);
+        Dead?.Invoke();
+        gameObject.SetActive(false);
     }
 }

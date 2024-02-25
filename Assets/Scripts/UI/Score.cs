@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    private int _score;
+    [SerializeField] private int _score;
 
     public event Action<int> Changed;
 
