@@ -1,11 +1,10 @@
 ﻿using System;
 using UnityEngine;
 
-[RequireComponent(typeof(BirdMover), typeof(Score), typeof(BirdCollisionHandler))]
+[RequireComponent(typeof(BirdMover), typeof(BirdCollisionHandler))]
 public class Bird : MonoBehaviour
 {
     private BirdMover _mover;
-    private Score _score;
     private BirdCollisionHandler _handler;
 
     public event Action GameOver;
@@ -18,7 +17,6 @@ public class Bird : MonoBehaviour
     private void Awake()
     {
         _mover = GetComponent<BirdMover>();
-        _score = GetComponent<Score>();
         _handler = GetComponent<BirdCollisionHandler>();
     }
 
@@ -46,7 +44,6 @@ public class Bird : MonoBehaviour
 
     public void Reset()
     {
-        _score.Reset();
         _mover.Reset();
     }
 }

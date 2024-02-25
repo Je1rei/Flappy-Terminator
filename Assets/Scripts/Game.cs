@@ -48,5 +48,6 @@ public class Game : MonoBehaviour
     {
         Time.timeScale = 1;
         _bird.Reset();
+        _enemyGenerator.Reset();
     }
 }

@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class EnemyGenerator : MonoBehaviour
 {
+    [SerializeField] private Score _score;
     [SerializeField] private float _delay;
     [SerializeField] private float _lowerBound;
     [SerializeField] private float _upperBound;
@@ -34,5 +35,12 @@ public class EnemyGenerator : MonoBehaviour
 
         enemy.gameObject.SetActive(true);
         enemy.transform.position = spawnPoint;
+
+        enemy.Dead += _score.Add;
+    }
+
+    public void Reset()
+    {
+        _score.Reset();
     }
 }

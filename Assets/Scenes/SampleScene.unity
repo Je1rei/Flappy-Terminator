@@ -1191,6 +1191,8 @@ GameObject:
   - component: {fileID: 1768412933}
   - component: {fileID: 1768412939}
   - component: {fileID: 1768412941}
+  - component: {fileID: 1768412943}
+  - component: {fileID: 1768412942}
   m_Layer: 8
   m_Name: Bird
   m_TagString: Untagged
@@ -1389,6 +1391,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7516514073ed92446a98f41265cfe8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _score: 0
+--- !u!114 &1768412942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768412932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50afab59c1c6634b9c9fc6a46c6f971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1768412943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768412932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d90f9c155eaa1174bbb869e4e38e630d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1856630848
